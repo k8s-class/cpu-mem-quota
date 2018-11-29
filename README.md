@@ -108,7 +108,7 @@ spec:
         cpu: "400m"
 
 
-[user@phatbox cpu-mem-quota (⎈ |Epick8s:default)]$ vi quota-mem-cpu-pod-2.yaml 
+[user@phatbox cpu-mem-quota (⎈ |Epick8s:default)]$ vi quota-mem-cpu-pod-2.yaml # Changed it to 399 memory
 [user@phatbox cpu-mem-quota (⎈ |Epick8s:default)]$ kubectl create -f quota-mem-cpu-pod-2.yaml --namespace=quota-mem-cpu-example
 pod/quota-mem-cpu-demo-2 created
 [user@phatbox cpu-mem-quota (⎈ |Epick8s:default)]$ kubectl get pod quota-mem-cpu-demo --namespace=quota-mem-cpu-example
